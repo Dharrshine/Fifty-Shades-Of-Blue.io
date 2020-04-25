@@ -1,0 +1,130 @@
+body{
+	background:#232323;
+	font-family: 'Asap', sans-serif;
+	max-width: 700px;
+	margin:0 auto;
+}
+
+.dark{
+	display: none;
+}
+
+.notSelected{
+	background-color: rgb(162, 238, 245);
+}
+
+#score{
+	display: inline-block;
+	width: 61.808%;
+	color: black;
+	font-size: medium;
+}
+
+.stopwatch{
+	text-align: center;
+	background-color: rgb(162, 238, 245);
+	height:40px;
+}
+
+.stopwatch button{
+	height: -webkit-fill-available;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+p{
+	color: rgb(250, 240, 247);
+	text-align: center;
+	font-size: 1.4rem;
+}
+.squares{
+	width:100px;
+	height: 100px;
+	background-color: pink;
+    border-radius: 20%;	
+    transition: all 0.2s;
+}
+
+#container{
+	max-width: 700px;
+	margin:20px auto;
+	font-size:2em;
+	border:1px white solid;
+	padding: 10px;
+	border-radius: 5%;	
+	text-align: center;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+    -webkit-border-horizontal-spacing: 6px;
+    -webkit-border-vertical-spacing: 6px;
+}
+
+button{
+	font-family: 'Asap', sans-serif;
+	border:none;;
+	font-size:1.1rem;
+	background-color: rgb(201, 193, 224);
+	padding: 5px;
+	outline: none;
+	transition: all 0.5s;
+	hover:;
+}
+
+button:hover{
+	background: rgb(145, 121, 212);
+}
+
+div p{
+	display: inline;
+	margin-left: 20px;
+	color: black;
+}
+
+#newg{
+	height: -webkit-fill-available;
+}
+#stripe{
+	background-color: white;
+	height:30px;
+}
+span{
+	display: inline-block;
+    width: 40%;
+	color: black;
+	font-size: 2rem;
+	text-align: center;
+}
+
+@media(max-width: 696px){
+
+	.squares {
+    width: 85px;
+    height: 85px;
+	}
+}
+
+@media(max-width: 560px){
+	.squares{
+		width:75px;
+		height: 75px;
+	}
+	#score{
+		width:57%;
+	}
+}
+
+@media(max-width: 600px){
+	div p{
+		margin-left: 5px;
+	}
+}
+
+@media(max-width: 560px){
+	#score{
+		font-size: small;
+	}
+}
+
