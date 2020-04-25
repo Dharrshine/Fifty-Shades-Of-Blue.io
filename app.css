@@ -9,6 +9,11 @@ body{
 	display: none;
 }
 
+#blue{
+	background-color: #1f2428;
+	height: 5px;
+}
+
 .notSelected{
 	background-color: rgb(162, 238, 245);
 }
