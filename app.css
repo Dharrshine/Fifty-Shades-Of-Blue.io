@@ -9,11 +9,6 @@ body{
 	display: none;
 }
 
-#blue{
-	background-color: #1f2428;
-	height: 5px;
-}
-
 .notSelected{
 	background-color: rgb(162, 238, 245);
 }
@@ -29,6 +24,7 @@ body{
 	text-align: center;
 	background-color: rgb(162, 238, 245);
 	height:40px;
+	margin-top: 5px;
 }
 
 .stopwatch button{
