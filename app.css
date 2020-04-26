@@ -7,7 +7,6 @@ body{
 
 .dark{
 	display: none;
-	border:1px white solid;
 }
 
 .notSelected{
@@ -127,5 +126,11 @@ span{
 	#score{
 		font-size: small;
 	}
+}
+
+.end{
+	color: azure;
+	font-size: 2em;
+	text-align: center;
 }
 

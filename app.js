@@ -140,6 +140,7 @@ var contain=document.querySelector("#container");
 var timeTaken;
 var easy=document.querySelector("#easy");
 var hard=document.querySelector("#hard");
+var end=document.querySelector(".end");
 var r=true;
 
 
@@ -193,6 +194,8 @@ for(var i=0;i<num.length;i++){
 				for(var i=0;i<highscore.length;i++){
 				score.textContent+=(i+ 1 + ")" +highscore[i] + "  ");
 				}
+				end.style.display="block";
+				end.innerHTML="<h1>GAME OVER</h1><br><h4>SCORE:"+timeTaken+"<h4>"
 	 			}
 	 		}
 	 		else{
@@ -210,6 +213,8 @@ for(var i=0;i<num.length;i++){
 					for(var i=0;i<highscoreEasy.length;i++){
 					score.textContent+=(i+ 1 + ")" +highscoreEasy[i] + "  ");
 					}
+					end.style.display="block";
+					end.innerHTML="<h1>GAME OVER</h1><br><h4>SCORE:"+timeTaken+"<h4>"
 	 			}
 	 		}
  		}
@@ -227,6 +232,7 @@ easy.addEventListener("click", function(){
 	easy.classList.remove("notSelected");
 	aTimer.stop();
 	contain.classList.add("dark");
+	end.style.display="none";
 	aTimer.reset();
 	r=false;
 	j=0;
@@ -282,6 +288,7 @@ newGame.addEventListener("click",function(){
  	a[i]=num[i].noo;
  	b[i]=num[i].colorr; 	
 	}
+	end.style.display="none";
 });
 
 function value(){
